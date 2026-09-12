@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python + Web Interfeys</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Web ilova va Python bog'lanishi</h2>
+        <p class="subtitle">Ismingizni kiriting va Python backend ga so'rov yuboring:</p>
+
+        <div class="form-group">
+            <input type="text" id="ismInput" placeholder="Ismingizni kiriting..." autocomplete="off">
+            <button id="sendBtn" onclick="yuborish()">Yuborish</button>
+        </div>
+
+        <div id="resultBox" class="result-box hidden"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
